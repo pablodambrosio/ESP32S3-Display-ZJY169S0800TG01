@@ -1,0 +1,15 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "bsp/bsp_board.c"
+        "bsp/bsp_backlight.c"
+        "bsp/bsp_display.c"
+    INCLUDE_DIRS
+        "."
+        "bsp"
+    REQUIRES
+        esp_lcd
+        esp_driver_spi
+        esp_driver_gpio
+        spi_flash
+)
